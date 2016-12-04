@@ -138,13 +138,9 @@
     });
 
     //pop up porfolio
-    $('.portfolio-image li a').magnificPopup({
-      type: 'image',
-      gallery: {
-        enabled: true
-      }
-      // other options
-    });
+    $("ajax-popup-link").click(function () {
+     window.location.replace("http://google.com"); //page will redirect to google.com
+  })
 
     //Skill
     jQuery('.skillbar').each(function() {

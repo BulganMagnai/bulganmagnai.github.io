@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Bulgan-Web Developer</title>
-    <link rel="icon" href="images/b.jpeg" type="image/png">
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/vote/16/medal_star_rank_outline-512.png" type="image/png">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="webdeveloper, portfolio, designer, software, frontend, juniordeveloper, sandiego, responsive" name="description">
+    <meta content="Webdeveloper based in San Diego, CA" name="description">
 
     <!--styles-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,9 +29,6 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    <!--[if lt IE 9]>
-       <script type="text/javascript" src="js/html5shiv.min.js"></script>
-    <![endif]-->
   </head>
   <body>
     <!--PRELOADER-->
@@ -56,30 +53,15 @@
             <a data-scroll="" href="#home" class="active">
               <span>Home</span>
             </a>
-            <!-- <a data-scroll="" href="#about">
-              <span>About</span>
-            </a> -->
             <a data-scroll="" href="#work">
               <span>Portfolio</span>
             </a>
              <a data-scroll="" href="#services">
               <span>About Me</span>
             </a>
-            <!-- <a data-scroll="" href="#employement">
-              <span>Employement</span>
-            </a> -->
             <a data-scroll="" href="#skill">
               <span>Skills</span>
             </a>
-            <!-- <a data-scroll="" href="#education">
-              <span>Education</span>
-            </a> -->
-            <!-- <a data-scroll="" href="#testimonial">
-              <span>Testimonial</span>
-            </a> -->
-            <!-- <a data-scroll="" href="#blog">
-              <span>Blog</span>
-            </a> -->
             <a data-scroll="" href="#contact">
               <span>Contact</span>
             </a>
@@ -126,54 +108,34 @@
                   <span>Portfolio</span>
                 </h3>
                 <p class="content-detail">
-                  Check out some of the projects I have been working on using Javascript, Ruby on Rails, jQuery and Bootstrap.
+                  Check out some of the projects I have been working on using Javascript, React.JS, Ruby on Rails, jQuery and Bootstrap.
                 </p>
               </div>
               <div class="col-md-9 content-right">
                 <!--PORTFOLIO IMAGE-->
                 <ul class="portfolio-image">
                   <li class="col-md-6 col-sm-6">
-                    <a href="images/bw-1.png"><img alt="image" src="images/BULGANRESUMEPIC.jpg">
-                      <div class="decription-wrap">
-                        <div class="image-bg">
-                           <p class="desc">MY RESUME</p>
-                        </div>
+                    <div data-toggle="modal" data-target="#carModal"><img alt="image" src="http://dimamp.com/wp-content/gallery/vehicles-sportcar/490886ed2ec582b7563c18786f004ef7.jpg">
 
+                      <div class="decription-wrap">
+                        <div class="image-bg">
+                           <p class="desc">DREAM CAR SIMULATION</p>
+                        </div>
                       </div>
-                    </a>
+                    </div>
+
                   </li>
+
                   <li class="col-md-6 col-sm-6">
-                    <a href="images/bw-2.png"><img alt="image" src="images/bw-2.png">
+                    <div data-toggle="modal" data-target="#shipModal"><img alt="image" src="http://jayperoni.com/wp-content/uploads/2010/03/battleship-game1.jpg">
                       <div class="decription-wrap">
                         <div class="image-bg">
                           <p class="desc">
-                            BATTLESHIP
+                          EPIC BATTLESHIP
                           </p>
                         </div>
                       </div>
-                    </a>
-                  </li>
-                  <li class="col-md-6 col-sm-6">
-                    <a href="images/bw-3.png"><img alt="image" src="images/bw-3.png">
-                      <div class="decription-wrap">
-                        <div class="image-bg">
-                          <p class="desc">
-                            WILDLIFE TRACKER
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="col-md-6 col-sm-6">
-                    <a href="images/bw-4.png"><img alt="image" src="images/bw-4.png">
-                      <div class="decription-wrap">
-                        <div class="image-bg">
-                          <p class="desc">
-                            APARTMENT FINDER
-                          </p>
-                        </div>
-                      </div>
-                    </a>
+                    </div>
                   </li>
                 </ul>
                 <!--/.PORTFOLIO IMAGE END-->
@@ -183,6 +145,65 @@
         </section>
         <!--/.WORK END-->
 
+<!-- Modal -->
+      <div class="modal fade" id="carModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <img src="http://dimamp.com/wp-content/gallery/vehicles-sportcar/490886ed2ec582b7563c18786f004ef7.jpg"/>
+              <h2 class="modal-title">Dream Car Simulator</h2>
+              <h4 class="modal-title">React.JS App</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                This is my first React.JS/Node.JS project - It's a simple car simulation app where the user could input the information for their car to build their dream car. The user then would be able to simulate their driving experience by trying out different functions within the car.
+                The simulator page has a panel of functional elements including:
+              </p>
+              <ul>
+                <li>A light switch to turn on and off the car headlights</li>
+                <li>Gas pedal to accelerate</li>
+                <li>Brake to slow down the speed</li>
+              </ul>
+            </div>
+            <div class="span1">
+              <input type="button" class="btn btn-info" id="carbutton" value="Try The Car Simulator" onclick="window.open('https://car-react.herokuapp.com/', '_blank')" >
+              <input type="button" class="btn btn-info" value="Check Out Source Code" onclick="window.open('https://github.com/mongolchic/car-react', '_blank')">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="shipModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <img src="http://cdn3.dualshockers.com/wp-content/uploads/2012/04/BATTLESHIP_6.jpg"/>
+              <h2 class="modal-title">Epic Battleship</h2>
+              <h4 class="modal-title">Javascript/jQuery App</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                This is a pair-programmed Javascript app where the user plays against the computer, which has placed the ships randomly across the board. The ships are in varying lengths depending the type of the ship taking up from 1 to 5 blocks on the board. You can track the number of "Hits" and "Misses" from the panel that indicates the number of torpedoes left and ships destroyed. There's also a "Ship Life Status" table that tracks the number of "Hits" and indicates the type of ship that has been hit.
+              </p>
+            </div>
+            <div class="span1">
+              <input type="button" class="btn btn-info" class="carbutton" value="Play Epic Battleship" onclick="window.open('https://epic-battleship.herokuapp.com/index.html', '_blank')">
+              <input type="button" class="btn btn-info" class="carbutton" value="Check Out Source Code" onclick="window.open('https://github.com/mongolchic/Battleship', '_blank')">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
         <!--SERVICES-->
         <section class="white-bg" id="services">
           <div class="container">
@@ -311,10 +332,6 @@
                         <div class="icon-top icon-black"><i class="devicon-jquery-plain" style="font-size: 3em;"></i></div>
                         <h5 class="features-title">jQuery</h5>
                     </div>
-                    <!-- <div class="col-md-2 col-sm-6 col-xs-12 content-box mb-sm-30 wow fadeIn" data-wow-delay="0.6s" data-wow-duration="2s">
-                        <div class="icon-top icon-black"><i class="devicon-git-plain"style="font-size: 3em;"></i></div>
-                        <h5 class="features-title">Git</h5>
-                    </div> -->
                 </div>
                 <div class="row">
                     <div class="col-md-2 col-sm-12 col-xs-12 content-box mb-sm-30 wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s">
@@ -337,10 +354,6 @@
                         <div class="icon-top icon-black"><i class="devicon-git-plain"style="font-size: 3em;"></i></div>
                         <h5 class="features-title">Git</h5>
                     </div>
-                    <!-- <div class="col-md-2 col-sm-6 col-xs-12 content-box mb-sm-30 wow fadeIn" data-wow-delay="0.6s" data-wow-duration="2s">
-                        <div class="icon-top icon-black"><i class="devicon-photoshop-plain" style="font-size: 3em;"></i></div>
-                        <h5 class="features-title">Photoshop</h5>
-                    </div> -->
                 </div>
               </div>
             </div>
@@ -396,7 +409,8 @@
     <!--/.CONTENT-WRAP END-->
     </div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="js/jquery.appear.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>

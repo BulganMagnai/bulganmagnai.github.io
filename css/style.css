@@ -461,7 +461,7 @@ h5 {
 }
 p {
   letter-spacing: 0.5px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 34px;
   font-weight: 300;
 }
@@ -599,6 +599,9 @@ p {
 
 /*----------------------------------------- 7) Sections --------------------------------------------------*/
 /*---------- a. portfolio -----------*/
+ul {
+  font-size: 14px;
+}
 ul.portfolio-image {
   list-style: none;
   position: relative;
@@ -692,7 +695,7 @@ ul.portfolio-image li .desc{
   margin: 0;
 }
 .head-sm {
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   margin-top: 10px;
@@ -969,9 +972,9 @@ ul.portfolio-image li .desc{
   font-size: 14px;
 }
 /*---------- g. contact -----------*/
-#contact {padding: 120px 0 200px 0;}
+#contact {padding: 100px 0 100px 0;}
 #contact form {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 #contact .slider-masks {
   background-color: rgba(129, 129, 129, 0.7);
@@ -1264,5 +1267,16 @@ ul.portfolio-image li .desc{
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
 }
+
 .skillst .count-bar .count { background-color: #818181;}
 .skillst .count-bar .count span:after { border-top: 4px solid #818181;}
+
+/*CSS Style for Car Page
+*/
+.modal-title {
+  text-align: center;
+}
+
+.span1 {
+  text-align: center;
+}
